@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Software</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="JAVA.js"></script>
+</head>
+<body>
+      <nav class="nav-bar">
+        <h1 class="logo">Computer</h1>
+        <div class="menu">
+          <span class="menubtn">&#9776</span>
+          <span class="closebtn">&#9746</span>
+        <ul class="nav-list">
+            <a class="main" href="1st-Page.html">Home</a>
+            <li><a href="About page.html">About</a></li>
+            <li><a href="appsoftware.html">Application Software</a></li>
+            <li><a href="systemsoftware.html">System Software</a></li>
+            <li><a href="user-interface.html">User Interface</a></li>
+        </ul>
+      </nav>
+    </div>
+
+      <div class="background">
+        <h2 class="text2">Computer Software</h2>
+    </div>
+
+
+    <div class="slideshow-container">
+      <div class="mySlides2">
+        <img src="Slide 1.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides2">
+        <img src="Slide 2.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides2">
+        <img src="Slide 3.jpg" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(1, 1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a> 
+      </div>
+      
+      <section class="page" id="section1">
+
+        <div class="down">
+          <h2 class="Overview">Overview</h2>
+          <p class="sentence">From operating systems that breathe life into hardware to applications that streamline our daily tasks, our website provides a roadmap to the diverse facets of computer software. Whether you're intrigued by the elegance of code, fascinated by artificial intelligence, or curious about the latest software innovations, our content caters to a spectrum of interests, making it an inclusive resource for all.
+              <br><br> Computer software is a vital component of modern computing, encompassing a diverse array of programs and instructions that enable computers to perform specific tasks. It is broadly categorized into system software and application software. System software includes operating systems and fundamental utilities that facilitate the functionality of the computer and manage hardware resources, while application software comprises a wide range of programs designed to fulfill specific user needs, such as word processing, graphic design, gaming, and more.
+              <br><br>The development and distribution of computer software involve various stages, from design and coding to testing and maintenance. Additionally, software can be distributed in various forms, including off-the-shelf products, custom applications, open source software, and web-based services. As technology continues to advance, software plays a pivotal role in driving innovation, efficiency, and productivity across industries and personal computing, making it an indispensable element of the digital age.
+          
+            </p>
+      </div>
+    </section>
+
+          <script>
+            let slideIndex = [1,1];
+            let slideId = ["mySlides2", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              let i;
+              let x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+            </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Software</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="Computer Software.html">Home</a>
+    <a href="About page.html">About</a>
+    <a href="appsoftware.html">Application Software</a>
+    <a href="systemsoftware.html">System Software</a>
+    <a href="user-interface.html">User Interface</a>
+</div>
+
+<div id="main">
+    <span class="main-logo" onclick="openNav()">☰ Computer Software</span>
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
+    <header>
+        <div class="header-content">
+            <h2>System Software</h2>
+            <div class="line"></div>
+        </div>
+    </header>
+    <body>
+    
+    <div class="paragraph-2">
+        <h2>Now let's explore System Software in greater detail!</h2><br>
+        <p>The link between application software and computer hardware is provided by system software. It is a collection of applications that control and regulate the capabilities and functions of computer hardware. Additionally, it makes application applications function properly. The system software is referred to as general-purpose software as it is not designed to carry out a particular function.</p>
+        <br>
+        <p>Without system software, a computer system cannot function. The computer system can comprehend the end user's instructions thanks to system software. The system software often creates a user interface that the end user interacts with rather than the system software directly.</p>
+    </div>
+    <div class="container">
+        <div class="box-2">
+            <img src="system3.png" alt="system3">
+        </div>
+    
+        <div class="box-2">
+            <img src="os.png" alt="os">
+        </div>
+    
+        <div class="box-2">
+            <img src="system3.png" alt="system2">
+        </div>
+    </div>
+    <div class="different">
+        <h2>Some Types of System Software</h2>
+    </div>
+    <div class="types">
+    <div class="box">
+    <ul>
+        <li><b>Operating Systems (OS): </b><br>The operating system is the fundamental piece of system software that controls and arranges hardware resources, offers a user interface, and permits software programs and computer hardware to communicate with one another. Windows, macOS, Linux, and Unix are just a few examples.</li>
+        <li><b>Device Drivers:</b><br>Programs known as device drivers help the operating system and particular hardware devices communicate with one another. </li>
+        <li><b>Firmware:</b><br>On programmable hardware devices, firmware is responsible for low-level functionality and control. Usually, digital cameras, routers, and computer motherboards contain it integrated. These devices' firmware enables efficient operation and communication with the system software.</li>
+        <li><b>BIOS/UEFI:</b><br>Initializing and configuring hardware during boot-up is the responsibility of the Unified Extensible Firmware Interface (UEFI) or Basic Input/Output System (BIOS).</li>
+    </ul>
+    </div>
+    <div class="box">
+    <ul>
+        <p class="continue">It performs necessary startup activities and gets the machine ready for the operating system to take command.</p>
+        <li><b>Virtualization Software:</b><br>Using virtualization software, one physical computer can run many operating systems concurrently. Virtual computers can be created and managed. In server environments, this technology is commonly utilized to maximize resource consumption.</li>
+        <li><b>System Libraries:</b><br>System libraries are sets of functions and precompiled code that offer reusable programming techniques. By providing pre-made solutions for typical tasks like managing input/output operations, networking, and graphical user interfaces, they streamline the software development process.</li>
+        <li><b>Utility Program:</b><br>These software packages include a number of tools for managing files and directories, securing the system, and carrying out other maintenance procedures. Software for system optimization, backup, disk defragmentation, and antivirus are a few examples.</li>
+    </ul>
+    </div>
+    </div>
+    <div class="compare">
+        <div class="image-compare">
+            <img src="systemvsapp.png" alt="systemvsapp">
+            <h2>Difference between System Software and Application Software</h2>
+        </div>
+    
+        <div class="table-compare">
+        <table>
+            <thead>
+                <tr>
+                    <th>ASPECT</th>
+                    <th>SYSTEM SOFTWARE</th>
+                    <th>APPLICATION SOFTWARE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Purpose</td>
+                    <td>Manages and controls computer hardware and resources</td>
+                    <td>Performs specific tasks for end users</td>
+                </tr>
+                <tr>
+                    <td>Design</td>
+                    <td>General-purpose software</td>
+                    <td>Specific-purpose software</td>
+                </tr>
+                <tr>
+                    <td>Interaction</td>
+                    <td>Interfaces between hardware and application software</td>
+                    <td>Interfaces between system software and end users</td>
+                </tr>
+                <tr>
+                    <td>Examples</td>
+                    <td>Operating systems, device drivers, utility programs</td>
+                    <td>Web browsers, word processors, spreadsheet software</td>
+                </tr>
+                <tr>
+                    <td>Functionality</td>
+                    <td>Enables application programs to run and interact correctly</td>
+                    <td>Performs specialized tasks such as data organization</td>
+                </tr>
+                <tr>
+                    <td>Programming Language</td>
+                    <td>Typically written in low-level languages</td>
+                    <td>Usually written in high-level languages</td>
+                </tr>
+                <tr>
+                    <td>Size</td>
+                    <td>Smaller in size compared to application software</td>
+                    <td>Bigger in size due to its specific functionalities</td>
+                </tr>
+                <tr>
+                    <td>Speed</td>
+                    <td>Fast operating speed</td>
+                    <td>May have varying speeds depending on the specific task</td>
+                </tr>
+                <tr>
+                    <td>User Interaction</td>
+                    <td>Less interactive with end users</td>
+                    <td>More interactive with end users</td>
+                </tr>
+                <tr>
+                    <td>Importance for Computer</td>
+                    <td>Essential for the computer to function correctly</td>
+                    <td>Enhances the computer’s usefulness but not essential</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
